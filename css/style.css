@@ -2,14 +2,34 @@
     box-sizing: border-box;
 }
 
-html{
-
-}
-
 /* Set a background color */
 body {
-    background-color: #474e5d;;
+    background: linear-gradient(-45deg, #c64b7a, #ffdd00, #01befe, #ff0000);
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+	height: 400%;
     font-family: Helvetica, sans-serif;
+}
+
+.titlebar-container{
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    width: 50%;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 90px;
+}
+
+.titlebar{
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 100px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -25,8 +45,8 @@ body {
     position: absolute;
     width: 6px;
     background-color: white;
-    top: -20;
-    bottom: -265px;
+    top: -100px;
+    bottom: -999px;
     left: 50%;
     margin-left: -3px;
 }
@@ -136,4 +156,15 @@ body {
   .right {
     left: 0%;
   }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
