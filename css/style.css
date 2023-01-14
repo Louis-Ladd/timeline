@@ -4,7 +4,7 @@
 
 /* Set a background color */
 body {
-    background: linear-gradient(-45deg, #c64b7a, #ffdd00, #01befe, #ff0000);
+	background: linear-gradient(-45deg, #c64b7a, #ffdd00, #01befe, #ff0000);
 	background-size: 200% 200%;
 	animation: gradient 5s ease infinite;
 	height: 400%;
@@ -64,8 +64,9 @@ body {
 .container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
+	width: 25px;
+	height: 25px;
+	animation: circles 5s ease infinite;
     right: -17px;
     background-color: white;
     border: 4px solid #13db19;
